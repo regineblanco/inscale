@@ -68,8 +68,90 @@ $(document).ready(function() {
                 slideTimeout = setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
             }, 5000);
-            } else {
+                document.getElementById('navList1').style.fontWeight = "";
+              document.getElementById('navList2').style.fontWeight = "";
+              document.getElementById('navList3').style.fontWeight = "800";
+              document.getElementById('navList4').style.fontWeight = "";
+              document.getElementById('navList5').style.fontWeight = "";
+              document.getElementById('va1').style.color = "";
+              document.getElementById('va2').style.color = "";
+              document.getElementById('va3').style.color = "#000";
+              document.getElementById('va4').style.color = "";
+              document.getElementById('va5').style.color = "";
+              } 
+              else if(index == 2) {
+                clearInterval(slideTimeout);
+              document.getElementById('navList1').style.fontWeight = "800";
+              document.getElementById('navList2').style.fontWeight = "";
+              document.getElementById('navList3').style.fontWeight = "";
+              document.getElementById('navList4').style.fontWeight = "";
+              document.getElementById('navList5').style.fontWeight = "";
+              document.getElementById('va1').style.color = "#000";
+              document.getElementById('va2').style.color = "";
+              document.getElementById('va3').style.color = "";
+              document.getElementById('va4').style.color = "";
+              document.getElementById('va5').style.color = "";
+
+                }
+
+              else if(index == 3) {
+                clearInterval(slideTimeout);
+              document.getElementById('navList1').style.fontWeight = "";
+              document.getElementById('navList2').style.fontWeight = "800";
+              document.getElementById('navList3').style.fontWeight = "";
+              document.getElementById('navList4').style.fontWeight = "";
+              document.getElementById('navList5').style.fontWeight = "";
+              document.getElementById('va1').style.color = "";
+              document.getElementById('va2').style.color = "#000";
+              document.getElementById('va3').style.color = "";
+              document.getElementById('va4').style.color = "";
+              document.getElementById('va5').style.color = "";
+
+                }
+
+                else if(index == 5) {
+                clearInterval(slideTimeout);
+              document.getElementById('navList1').style.fontWeight = "";
+              document.getElementById('navList2').style.fontWeight = "";
+              document.getElementById('navList3').style.fontWeight = "";
+              document.getElementById('navList4').style.fontWeight = "800";
+              document.getElementById('navList5').style.fontWeight = "";
+              document.getElementById('va1').style.color = "";
+              document.getElementById('va2').style.color = "";
+              document.getElementById('va3').style.color = "";
+              document.getElementById('va4').style.color = "#000";
+              document.getElementById('va5').style.color = "";
+
+                }
+                else if(index == 6) {
+                clearInterval(slideTimeout);
+              document.getElementById('navList1').style.fontWeight = "";
+              document.getElementById('navList2').style.fontWeight = "";
+              document.getElementById('navList3').style.fontWeight = "";
+              document.getElementById('navList4').style.fontWeight = "";
+              document.getElementById('navList5').style.fontWeight = "800";
+              document.getElementById('va1').style.color = "";
+              document.getElementById('va2').style.color = "";
+              document.getElementById('va3').style.color = "";
+              document.getElementById('va4').style.color = "";
+              document.getElementById('va5').style.color = "#000";
+
+                }
+
+              else {
               clearInterval(slideTimeout);
+              document.getElementById('navList1').style.fontWeight = "";
+              document.getElementById('navList2').style.fontWeight = "";
+              document.getElementById('navList3').style.fontWeight = "";
+              document.getElementById('navList4').style.fontWeight = "";
+              document.getElementById('navList5').style.fontWeight = "";
+              document.getElementById('va1').style.color = "";
+              document.getElementById('va2').style.color = "";
+              document.getElementById('va3').style.color = "";
+              document.getElementById('va4').style.color = "";
+              document.getElementById('va5').style.color = "";
+
+
             }
             //  if(index == 1){
             // document.getElementById('foo').innerHTML = '';
