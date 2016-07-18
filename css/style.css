@@ -448,7 +448,7 @@ img.arrow-pop {
 }
 
 .peoplePadd h3 {
-	color: #AEA46F;
+	/*color: #AEA46F;*/
 	font-size: 18px;
 	font-weight: 300;
 	margin-bottom: 0;
@@ -456,7 +456,9 @@ img.arrow-pop {
 }
 
 .peoplePadd p {
-	font-size: 18px;
+	color: #AEA46F;
+	font-style: italic;
+	font-size: 14px;
 	font-weight: 300;
 	margin-top: 0px;
 }
