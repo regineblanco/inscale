@@ -337,7 +337,7 @@ $('.carousel').carousel({
 })
 
 $('.carouselx').carousel({
-  interval: 10000,
+  interval: 5000,
   pause: 'none'
 })
 
