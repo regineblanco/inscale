@@ -31,7 +31,7 @@ p {
 	margin-top: 10px;
     margin-bottom: 10px;
 }
- 
+
  a, a:focus, a:hover, a:active {
  	color: inherit;
  }
@@ -119,7 +119,7 @@ ul .nope {
 	width: 100%;
 	height: 100vh;
 
-	background: url(../img/architecture/wida-house-i/wida-house-i-1.jpg) center top;
+	background: url(../img/interior/tsa-studio/tsa-studio-1.jpg) center top;
 	background-size: cover;
 }
 
@@ -127,19 +127,11 @@ ul .nope {
 	width: 100%;
 	height: 100vh;
 
-	background: url(../img/interior/tsa-studio/tsa-studio-1.jpg) center top;
-	background-size: cover;
-}
-
-.sliderFour {
-	width: 100%;
-	height: 100vh;
-
 	background: url(../img/interior/homelibrary/home-library-1.jpg) center top;
 	background-size: cover;
 }
 
-.sliderFive {
+.sliderFour {
 	width: 100%;
 	height: 100vh;
 
@@ -199,7 +191,7 @@ ul .nope {
 	height: 33.3333vh;
 	display: block;
 
-	
+
 }
 
 .shit img,
@@ -449,7 +441,7 @@ img.arrow-pop {
 	color: #fff;
 	list-style: none;
 
-	
+
 }
 
 .navi-prod ul li div {
@@ -496,7 +488,7 @@ img.arrow-pop {
 /*INPEOPLE END*/
 
 
- 
+
 
 /*CAROSEL BOOSTRAP*/
 /*.carousel-fade .carousel-inner .item {
@@ -533,14 +525,14 @@ img.arrow-pop {
 
 .contactUs {
 
-	
+
 }
 
 .contactUs .touch {
 	text-align: left;
 	border-right: 1px solid #000;
 	height: 300px;
-	
+
 }
 
 

@@ -78,7 +78,7 @@ $(document).ready(function() {
               document.getElementById('va3').style.color = "#000";
               document.getElementById('va4').style.color = "";
               document.getElementById('va5').style.color = "";
-              } 
+              }
               else if(index == 2) {
                 clearInterval(slideTimeout);
               document.getElementById('navList1').style.fontWeight = "800";
@@ -157,8 +157,8 @@ $(document).ready(function() {
             // document.getElementById('foo').innerHTML = '';
             // document.getElementById('foo').style.color = "#000";
             // document.getElementById('fooDes').style.color = "#000";
-            // } 
-            // else 
+            // }
+            // else
 
             //  if(index == 2){
             // document.getElementById('foo').innerHTML = '/INSIDE US';
@@ -206,13 +206,13 @@ $(document).ready(function() {
             // document.getElementById('foo').innerHTML = '/CONTACT US';
             // document.getElementById('foo').style.color = "#000";
             // document.getElementById('fooDes').style.color = "#000";
-            // } 
+            // }
 
             // else {
             // document.getElementById('foo').innerHTML = '';
-            // } 
+            // }
 
-            
+
 
         },
         afterRender: function(){
@@ -237,7 +237,7 @@ $(document).ready(function() {
 
     //STICKY HEADER IF THEY WANT TO
 // $(window).scroll(function() {
-// if ($(this).scrollTop() > 1){  
+// if ($(this).scrollTop() > 1){
 //     // $('header').addClass("hidden");
 //     $('header').hide("slow");
 //     $('div#header2').show('slow');
@@ -263,7 +263,7 @@ $(document).on('click', '#moveLeft', function(){
 
 // $.fn.fullpage({
 //     afterLoad: function(anchorLink, index){
-        
+
 //         if(anchorLink == 'InsideUs'){
 //             // $('#fp-nav2').find('li').addClass('active');
 //             alert("First slide loaded");
@@ -278,7 +278,7 @@ $(document).on('click', '#moveLeft', function(){
 
 //     else {
 //        $('#fp-nav2').find('li').removeClass('active');}
- 
+
 
 
 
@@ -332,7 +332,7 @@ $(document).on('click', '#moveLeft', function(){
 // });
 
 $('.carousel').carousel({
-  interval: 2000,
+  interval: 5000,
   pause: 'none'
 })
 
@@ -356,14 +356,14 @@ $(".paddRemove").each(function(){
     var refH = $(this).height();
     var refW = $(this).width();
     var refRatio = refW/refH;
-    
+
     // Hard coded value...
     var refRatio = 3174/1936;
-    
+
     var imgH = $(this).children("img").height();
     var imgW = $(this).children("img").width();
-    
-    if ( (imgW/imgH) < refRatio ) { 
+
+    if ( (imgW/imgH) < refRatio ) {
         $(this).addClass("portrait");
     } else {
         $(this).addClass("landscape");
@@ -372,7 +372,7 @@ $(".paddRemove").each(function(){
 
 $(window).on('load', function(){
       var win = $(this);
-      if (win.width() < 768) { 
+      if (win.width() < 768) {
 
       $('#peoPles').addClass('coba');
 
@@ -385,7 +385,7 @@ $(window).on('load', function(){
 
 $(window).on('resize', function(){
       var win = $(this);
-      if (win.width() < 768) { 
+      if (win.width() < 768) {
 
       $('#peoPles').addClass('coba');
 
