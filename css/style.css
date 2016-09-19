@@ -37,6 +37,9 @@ p {
  }
 
  /*NAVIGATION*/
+ .navbar {
+    display: none;
+ }
 
  .navbar-header {
  	height: 115px;
@@ -105,6 +108,25 @@ ul .nope {
 /*SLIDER HOMEPAGES*/
 .carousel-inner {
 	height: 100vh;
+}
+
+.carousel-table {
+  display: table;
+  position: relative;
+  height: 100%;
+  width: 100%
+}
+
+.carousel-table h2 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  font-family: Helvetica;
+  font-size: 50pt;
+  letter-spacing: 15pt;
+  color: #fff;
+  font-weight: 800;
 }
 
 .sliderOne {
@@ -491,7 +513,7 @@ img.arrow-pop {
 
 
 /*CAROSEL BOOSTRAP*/
-/*.carousel-fade .carousel-inner .item {
+.carousel-fade .carousel-inner .item {
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
@@ -515,7 +537,7 @@ img.arrow-pop {
 }
 .carousel-fade .carousel-control {
   z-index: 2;
-}*/
+}
 
 /*CAROSEL BOOSTRAP END*/
 
