@@ -34,11 +34,16 @@ p {
 
  a, a:focus, a:hover, a:active {
  	color: inherit;
+  text-decoration: none;
+ }
+
+ ul, li, menu {
+  list-style: none;
  }
 
  /*NAVIGATION*/
  .navbar {
-    display: none;
+    /*display: none;*/
  }
 
  .navbar-header {
@@ -104,6 +109,99 @@ ul .nope {
 }
 
 /*NAVIGATION END*/
+
+/* CENTERED HEADER */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  font-size: 15pt;
+
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+header li {
+  display: inline-block;
+}
+
+.header-left, .header-right {
+  position: absolute;
+  top: 40px;
+}
+
+.header-left {
+  left: 50px;
+  cursor: pointer;
+}
+
+.header-right {
+  right: 50px;
+}
+
+.header-title {
+  padding: 10px 0px;
+}
+
+.logo-title img {
+  height: 90px;
+  width: auto;
+}
+
+/* HEADER MENU */
+
+menu {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 9998;
+  padding: 0px;
+  padding-top: 110px;
+  padding-bottom: 20px;
+  margin: 0px;
+
+ 	background: rgba(255,255,255,0.8);
+ 	box-shadow: none;
+ 	border: none;
+  text-align: center;
+  font-size: 15pt;
+  color: #555;
+
+  transition: opacity 0.5s ease-in-out;
+  moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+}
+
+menu.visible {
+  opacity: 1;
+  display: block;
+}
+
+menu li {
+  padding: 5px 0;
+}
+
+menu li a {
+  font-family: Helvetica;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+menu li a:hover {
+  font-weight: 800 !important;
+}
+
+menu li a span {
+ 	color: #AEA46F;
+}
 
 /*SLIDER HOMEPAGES*/
 .carousel-inner {
@@ -669,6 +767,7 @@ img.arrow-pop {
 
 	.navbar-toggle {
 		margin-top: 22px;
+    border: none;
 	}
 	.landscape img {
 		/*width: 100%;

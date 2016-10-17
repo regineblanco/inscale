@@ -396,6 +396,10 @@ $(window).on('resize', function(){
     }
 });
 
+$('.menu-toggle').click(function(e) {
+  var $menu = $('menu');
+  $menu.toggleClass('visible');
+});
 
 
 
