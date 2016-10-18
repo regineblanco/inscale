@@ -112,6 +112,29 @@ ul .nope {
 	display: none;
 }
 
+.link-social {
+  font-size: .6em;
+  line-height: 1.75em;
+  color: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 3px;
+}
+
+.social-ig {
+  background-color: #e1306c;
+}
+
+.social-twitter {
+  background-color: #657786;
+}
+
+.social-facebook {
+  background-color: #3b5998;
+}
+
 /*NAVIGATION END*/
 
 /* CENTERED HEADER */
