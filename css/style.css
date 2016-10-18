@@ -654,6 +654,14 @@ img.arrow-pop {
   z-index: 2;
 }
 
+.carousel-control {
+  text-shadow: none;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background: none;
+}
+
 /*CAROSEL BOOSTRAP END*/
 
 
