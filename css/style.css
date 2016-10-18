@@ -41,6 +41,10 @@ p {
   list-style: none;
  }
 
+ .hidden {
+  display: none;
+ }
+
  /*NAVIGATION*/
  .navbar {
     /*display: none;*/
@@ -156,7 +160,6 @@ header li {
 
 menu {
   opacity: 0;
-  display: none;
   position: fixed;
   width: 100%;
   z-index: 9998;
@@ -171,17 +174,6 @@ menu {
   text-align: center;
   font-size: 15pt;
   color: #555;
-
-  transition: opacity 0.5s ease-in-out;
-  moz-transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-}
-
-menu.visible {
-  opacity: 1;
-  display: block;
 }
 
 menu li {
@@ -189,7 +181,6 @@ menu li {
 }
 
 menu li a {
-  font-family: Helvetica;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 4px;
@@ -201,6 +192,10 @@ menu li a:hover {
 
 menu li a span {
  	color: #AEA46F;
+}
+
+.menu-toggle, .menu-close {
+  font-size: .8em;
 }
 
 /*SLIDER HOMEPAGES*/
@@ -220,7 +215,6 @@ menu li a span {
   text-align: center;
   vertical-align: middle;
   height: 100%;
-  font-family: Helvetica;
   font-size: 50pt;
   letter-spacing: 15pt;
   color: #fff;

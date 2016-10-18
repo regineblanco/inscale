@@ -396,9 +396,28 @@ $(window).on('resize', function(){
     }
 });
 
-$('.menu-toggle').click(function(e) {
-  var $menu = $('menu');
-  $menu.toggleClass('visible');
+$('.menu-toggle, .menu-close').click(function(e) {
+  var $menu = $('menu'),
+      isHidden = ($menu.css('display') === 'none');
+
+  if (isHidden) {
+    $menu.css({'display': 'block'});
+    $menu.animate(
+      { 'opacity': 1 },
+      500
+    )
+  } else {
+    $menu.animate(
+      { 'opacity': 0 },
+      500,
+      function undisplayMenu() {
+        $menu.css({'display': 'none'});
+      }
+    )
+  }
+
+  $('.menu-toggle').toggleClass('hidden');
+  $('.menu-close').toggleClass('hidden');
 });
 
 
