@@ -1,0 +1,932 @@
+/*
+ * Agam Biline Development, css style
+ *
+ * Copyright 2016 BilineDev
+ * http://www.bilinedev.com/
+*/
+
+ @font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/gotham-book.ttf');
+   }
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../fonts/gotham-medium.ttf');
+   }
+
+   @font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/gotham-bold.ttf');
+   }
+
+body {
+	overflow-x: hidden !important;
+}
+
+ h1, h2, h3 ,h4 ,h5 ,h6, p, span, form, table,div, li {
+ 	font-family: 'Roboto', Helvetica, Arial;
+ }
+p {
+	font-size: 12px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ a, a:focus, a:hover, a:active {
+ 	color: inherit;
+  text-decoration: none;
+ }
+
+ ul, li, menu {
+  list-style: none;
+ }
+
+ .hidden {
+  display: none;
+ }
+
+ /*NAVIGATION*/
+ .navbar {
+    /*display: none;*/
+ }
+
+ .navbar-header {
+ 	height: 115px;
+ }
+
+ .navbar-custom {
+ 	background: rgba(255,255,255,0.8);
+ 	/*background: red;*/
+ 	box-shadow: none;
+ 	border: none;
+ }
+
+ .nav_container {
+ 	padding: 0px 30px;
+ }
+
+ .navbar-nav {
+ 	margin-top: -50px;
+ }
+
+ .navbar-nav li a {
+ 	/*font-weight: 300;*/
+ 	font-size: 14px;
+ 	letter-spacing: 0.4pt;
+ 	padding-right: 35px;
+ 	padding-left: 35px;
+ }
+
+ .navbar-nav li a:hover {
+ 	/*color: red !important;*/
+ 	font-weight: 700 !important;
+ 	background: none !important;
+ }
+
+ .navbar-nav li a span {
+ 	color: #AEA46F;
+ }
+
+.logoPos img {
+		height: 90px;
+		width: auto;
+		padding-left: 30%;
+}
+
+.nav-social {
+	height: 70px;
+
+	float: right;
+}
+
+.nav-social li {
+	float: left;
+	margin: 20px 0px 0px 5px;
+}
+
+.nav-social li:last-child {
+	margin-right: 0px;
+}
+
+.sublist-items {
+  margin-top: 10px;
+}
+
+.sublist-item {
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  letter-spacing: 2px;
+  margin: 0 10px;
+}
+
+ul .nope {
+	display: none;
+}
+
+.link-social {
+  font-size: .6em;
+  line-height: 1.75em;
+  color: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 3px;
+}
+
+.social-ig {
+  background-color: #e1306c;
+}
+
+.social-twitter {
+  background-color: #657786;
+}
+
+.social-facebook {
+  background-color: #3b5998;
+}
+
+/*NAVIGATION END*/
+
+/* CENTERED HEADER */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  font-size: 15pt;
+
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+header li {
+  display: inline-block;
+}
+
+.header-left, .header-right {
+  position: absolute;
+  top: 40px;
+}
+
+.header-left {
+  left: 50px;
+  cursor: pointer;
+}
+
+.header-right {
+  right: 50px;
+}
+
+.header-title {
+  padding: 10px 0px;
+}
+
+.logo-title img {
+  height: 90px;
+  width: auto;
+}
+
+/* HEADER MENU */
+
+menu {
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9998;
+  padding: 0px;
+  padding-top: 110px;
+  padding-bottom: 20px;
+  margin: 0px;
+
+ 	background: rgba(255,255,255,0.8);
+ 	box-shadow: none;
+ 	border: none;
+  text-align: center;
+  font-size: 15pt;
+  color: #555;
+}
+
+menu li {
+  padding: 5px 0;
+}
+
+menu li a {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+menu li a:hover {
+  font-weight: 800 !important;
+}
+
+menu li a span {
+ 	color: #AEA46F;
+}
+
+.menu-toggle, .menu-close {
+  font-size: .8em;
+}
+
+/*SLIDER HOMEPAGES*/
+.carousel-inner {
+	height: 100vh;
+}
+
+.carousel-table {
+  display: table;
+  position: relative;
+  height: 100%;
+  width: 100%
+}
+
+.carousel-table h2 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  font-size: 50pt;
+  letter-spacing: 15pt;
+  color: #fff;
+  font-weight: 800;
+}
+
+.sliderOne {
+	width: 100%;
+	height: 100vh;
+
+	background: url(../img/architecture/meranti-house/meranti-house-1.jpg) center top;
+	background-size: cover;
+}
+
+.sliderTwo {
+	width: 100%;
+	height: 100vh;
+
+	background: url(../img/interior/tsa-studio/tsa-studio-1.jpg) center top;
+	background-size: cover;
+}
+
+.sliderThree {
+	width: 100%;
+	height: 100vh;
+
+	background: url(../img/interior/homelibrary/home-library-1.jpg) center top;
+	background-size: cover;
+}
+
+.sliderFour {
+	width: 100%;
+	height: 100vh;
+
+	background: url(../img/interior/takigawa-restaurant/takigawa-1.jpg) center top;
+	background-size: cover;
+}
+
+.newCaption {
+	position: absolute;
+	margin-top: 45vh;
+	top: 0;
+}
+
+.newCaption h1 {
+	letter-spacing: 1px;
+	font-family: 'Gotham Bold';
+	text-transform: uppercase;
+}
+
+/*SLIDER HOMEPAGES END*/
+
+/*INSIDEUS*/
+
+.insideUs {
+	width: 100%;
+	height:100vh;
+
+	background: url(../img/insideus/the_company_page.jpg) center top;
+	background-size: cover;
+}
+
+.insideCont {
+	position: absolute;
+	right: 5%;
+	bottom: 15%;
+}
+
+.insideCont p {
+	max-width: 432px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: justify;
+}
+
+/*INSIDEUS END*/
+
+/*INFOLIO*/
+
+.fooli {
+	width: 100%;
+	height: 100vh;
+}
+
+.shit div {
+	/*background-color:red;*/
+
+	height: 33.3333vh;
+	display: block;
+
+
+}
+
+.shit img,
+.shit div.paddRemove {
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+}
+
+
+
+.project1 {
+	background: url(../img/insideus/the_company_page.jpg) center top;
+	background-size: cover;
+
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+}
+
+.shit div:hover img,
+.shit div.paddRemove:hover {
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+
+    cursor: pointer;
+}
+
+.shit div:hover p {
+	/*display: block;*/
+	opacity: 1;
+    moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+}
+
+
+.portrait img {
+    width: 100%;
+}
+.landscape img {
+    height: 100%;
+    /*width: auto;*/
+    text-align: center;
+}
+
+.paddRemove {
+	padding: 0 ;
+	overflow: hidden;
+}
+
+.paddRemove img {
+	z-index: 0;
+}
+
+.paddRemove p {
+	position: absolute;
+    bottom: 0;
+    /*left: 50%;*/
+    /*right: 50%;*/
+    z-index: 1;
+    text-align: center;
+    color: #FFF;
+    width: 100%;
+    padding: 20px 0px;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    /*display: none;*/
+    opacity: 0;
+
+    moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+
+}
+
+.shit {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.lala {
+	width: 100%;
+	height: 100%;
+}
+
+.navi-porto {
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+	z-index: 2;
+}
+
+.infolio {
+	z-index: 0
+}
+
+.navi-list li {
+	float: left;
+	background: rgba(255,255,255,0.5);
+	margin: auto;
+
+	width: 40px;
+	height: 40px;
+	list-style-type: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	padding-top: 8px;
+}
+
+.navi-list li:hover {
+	background: rgba(255,255,255,1);
+	color: #AEA46F;
+}
+
+.white-popup {
+	/*position: absolute;*/
+	/*top:0;*/
+	z-index: 3;
+	/*background-color: red;*/
+	background: rgba(255,255,255,.9);
+	width: 100vw;
+	height: 100vh;
+	margin-left: -8px;
+	overflow: auto;
+
+
+	/*display: none;*/
+}
+
+.popContent {
+	padding: 30px;
+	padding-top: 50px;
+}
+
+.popText p {
+	padding-top: 20px;
+	letter-spacing: .4px;
+}
+
+.popText h3 {
+	font-style: italic;
+    letter-spacing: 0.7px;
+    font-size: 22px;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.popText h5 {
+	letter-spacing: .7px;
+	padding-left: 10px;
+}
+
+.popImg img {
+	width: 100%;
+}
+
+.navPOP div:first-child {
+	float: left;
+}
+
+.navPOP div:last-child {
+	float: right;
+}
+
+img.arrow-pop {
+	width: 36px;
+	padding-top: 10px;
+}
+
+.height23 {
+	width: 100%;
+	height: 450px;
+
+}
+
+#porfo {
+	background-color: #333;
+}
+
+
+
+
+
+/*INFOLIO END*/
+
+
+/*INPRODUCT*/
+.proD {
+	padding-top: 50vh;
+}
+
+
+.slideProImg {
+	text-align: center;
+}
+
+.slideProImg img {
+	width: 100px;
+}
+
+.slideProCont img {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.slideProImg h2 {
+	font-family: 'Gotham Bold';
+	color: #fff;
+
+}
+
+.slideProImg a {
+	padding: 10px 40px;
+	color: #000;
+	background-color: #fff;
+	font-family: 'Gotham Medium';
+	border: 1px solid #e2e2e2;
+	border-radius: 20px;
+}
+
+.navi-prod {
+	position: absolute;
+	z-index: 9;
+	bottom: 20px;
+	left: 20px;
+}
+
+.navi-prod ul li {
+	float: left;
+	margin-right: 10px;
+	color: #fff;
+	list-style: none;
+
+
+}
+
+.navi-prod ul li div {
+	width:50px;
+	height:50px;
+}
+
+/*INPRODUCT END*/
+
+/*INPEOPLE*/
+.peopleBase {
+	/*width: 100vw;*/
+	/*height: 100vh;*/
+	text-align: center;
+	/*margin: 0;*/
+}
+
+.peoplePadd {
+	padding-top: 125px;
+	margin: 0;
+}
+
+.peoplePadd img {
+	margin-top: 20px;
+}
+
+.peoplePadd h3 {
+	/*color: #AEA46F;*/
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.peoplePadd p {
+	color: #AEA46F;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 0px;
+}
+
+
+/*INPEOPLE END*/
+
+
+
+
+/*CAROSEL BOOSTRAP*/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel-control {
+  text-shadow: none;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background: none;
+}
+
+/*CAROSEL BOOSTRAP END*/
+
+
+
+/*CONTACT US*/
+
+.contactUs {
+
+
+}
+
+.intouch-header {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 4px solid black;
+  width: 100%;
+}
+
+.intouch-body {
+  margin: 30px 0 0 0;
+}
+
+.contactUs .touch {
+	text-align: left;
+}
+
+.intouch-body {
+  font-size: 12px;
+}
+
+.intouch-email {
+  margin-top: 15px;
+}
+
+.formContact {
+  margin-bottom: 30px;
+}
+
+.formContact input, .formContact textarea {
+  font-size: 11px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #dbdcdf;
+}
+
+.formContact input:focus, .formContact textarea:focus {
+  box-shadow: none;
+  background-color: #e6e6eb;
+}
+
+.formContact button {
+  text-shadow: none;
+	background: none;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 0;
+	box-shadow: none;
+	margin-top: 20px;
+  padding: 5px 20px;
+}
+
+.formContact button:hover,
+.formContact button:focus,
+.formContact button:active {
+  background-color: #555;
+  color: white;
+  box-shadow: none;
+}
+
+.formContact label {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+
+#map {
+            width: 100%;
+            height: 100%;
+        }
+
+.huahaha h1 {
+	font-size: 12px;
+	float: left;
+	font-family: 'Gotham Bold';
+}
+
+#fp-nav2 {
+	position: fixed;
+	bottom: 0;
+	padding-left: 100px;
+    z-index: 100;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.sembunyi {
+	display: none;
+}
+
+#fp-nav {
+	display: none;
+}
+
+.formCont, .mapsCont {
+	width: 100vw;
+	margin: 0 auto;
+	/*height: 30vh;*/
+}
+
+.formCont {
+	height: 50vh;
+	padding-top: 125px;
+}
+
+.mapsCont {
+	height: 50vh;
+}
+
+.hapus {
+	margin: 0;
+}
+
+
+
+/*CONTACT END*/
+
+@media only screen and (min-width: 1306px) and (max-height: 850px) {
+	.landscape img {
+		width: 100%;
+		/*height: auto;*/
+	}
+}
+
+/*@media only screen and (max-width: 1306) and (min-height: 850px) {
+	.landscape img {
+		height: 100%;
+		width: auto;
+	}
+}*/
+
+
+@media only screen and (max-width: 768px) {
+	.nav_container {
+		padding: 0;
+	}
+	.navbar-header {
+		height: 80px;
+	}
+
+	.logoPos img {
+		height: 50px;
+		width: auto;
+		padding-left: 10px;
+	}
+
+	.mobileHidden {
+		display: none;
+	}
+
+	.shit div {
+		height: 25vh;
+	}
+
+	.navbar-nav {
+		margin: 7.5px -15px;
+	}
+
+	.navbar-nav li a {
+		padding: 10px 15px;
+	}
+
+	.navbar-toggle {
+		margin-top: 22px;
+    border: none;
+	}
+	.landscape img {
+		/*width: 100%;
+		height: auto;*/
+	}
+
+	.white-popup {
+		    margin-left: -5px;
+    margin-top: -19px;
+    height:auto;
+	}
+
+	button.mfp-close, button.mfp-arrow {
+		    position: fixed;
+		    background: rgba(255,255,255,.5);
+    /*top: 6%;*/
+    /*right: 6%*/
+	}
+
+	.caroHeight {
+		height: auto;
+	}
+
+	/*.peopleBase {
+		width: 100%;
+		height: auto;
+
+		padding-bottom: 30px;
+	}*/
+
+	.peoplePadd {
+		padding-top: 0;
+	}
+
+	.peoplePadd div {
+		min-height: 185px;
+	}
+
+	.peoplePadd img {
+		width: 100%;
+		padding-top: 2px;
+	}
+
+	.peoplePadd h3, .peoplePadd p {
+		font-size: 10px;
+	}
+
+	.contactUs .touch {
+		height: auto;
+	}
+
+	.formCont {
+		padding-top: 80px;
+	}
+
+	.formContact label {
+		font-size: 10px;
+		margin-bottom: 2px;
+	}
+
+	.touch h4 {
+		font-size: 10px;
+	}
+
+	.touch h5 {
+		font-size: 8px;
+	}
+
+	.formContact textarea.form-control {
+		height: 100px;
+	}
+
+	.mapsCont {
+		display: none;
+	}
+
+	.insideCont p {
+		padding: 20px;
+	}
+}
