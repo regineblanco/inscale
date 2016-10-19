@@ -25,7 +25,7 @@ $(document).ready(function() {
         //Scrolling
         css3: true,
         scrollingSpeed: 700,
-        autoScrolling: true,
+        autoScrolling: false,
         fitToSection: false,
         fitToSectionDelay: 2000,
         scrollBar: true,
@@ -71,8 +71,6 @@ $(document).ready(function() {
                 document.getElementById('navList1').style.fontWeight = "";
               document.getElementById('navList2').style.fontWeight = "";
               document.getElementById('navList3').style.fontWeight = "800";
-              document.getElementById('navList4').style.fontWeight = "";
-              document.getElementById('navList5').style.fontWeight = "";
               document.getElementById('va1').style.color = "";
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "#000";
@@ -84,8 +82,6 @@ $(document).ready(function() {
               document.getElementById('navList1').style.fontWeight = "800";
               document.getElementById('navList2').style.fontWeight = "";
               document.getElementById('navList3').style.fontWeight = "";
-              document.getElementById('navList4').style.fontWeight = "";
-              document.getElementById('navList5').style.fontWeight = "";
               document.getElementById('va1').style.color = "#000";
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";
@@ -99,8 +95,6 @@ $(document).ready(function() {
               document.getElementById('navList1').style.fontWeight = "";
               document.getElementById('navList2').style.fontWeight = "800";
               document.getElementById('navList3').style.fontWeight = "";
-              document.getElementById('navList4').style.fontWeight = "";
-              document.getElementById('navList5').style.fontWeight = "";
               document.getElementById('va1').style.color = "";
               document.getElementById('va2').style.color = "#000";
               document.getElementById('va3').style.color = "";
@@ -114,8 +108,6 @@ $(document).ready(function() {
               document.getElementById('navList1').style.fontWeight = "";
               document.getElementById('navList2').style.fontWeight = "";
               document.getElementById('navList3').style.fontWeight = "";
-              document.getElementById('navList4').style.fontWeight = "800";
-              document.getElementById('navList5').style.fontWeight = "";
               document.getElementById('va1').style.color = "";
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";
@@ -128,8 +120,6 @@ $(document).ready(function() {
               document.getElementById('navList1').style.fontWeight = "";
               document.getElementById('navList2').style.fontWeight = "";
               document.getElementById('navList3').style.fontWeight = "";
-              document.getElementById('navList4').style.fontWeight = "";
-              document.getElementById('navList5').style.fontWeight = "800";
               document.getElementById('va1').style.color = "";
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";
@@ -143,8 +133,6 @@ $(document).ready(function() {
               document.getElementById('navList1').style.fontWeight = "";
               document.getElementById('navList2').style.fontWeight = "";
               document.getElementById('navList3').style.fontWeight = "";
-              document.getElementById('navList4').style.fontWeight = "";
-              document.getElementById('navList5').style.fontWeight = "";
               document.getElementById('va1').style.color = "";
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";

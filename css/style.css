@@ -108,6 +108,18 @@ p {
 	margin-right: 0px;
 }
 
+.sublist-items {
+  margin-top: 10px;
+}
+
+.sublist-item {
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  letter-spacing: 2px;
+  margin: 0 10px;
+}
+
 ul .nope {
 	display: none;
 }
@@ -673,24 +685,69 @@ img.arrow-pop {
 
 }
 
-.contactUs .touch {
-	text-align: left;
-	border-right: 1px solid #000;
-	height: 300px;
-
+.intouch-header {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 4px solid black;
+  width: 100%;
 }
 
+.intouch-body {
+  margin: 30px 0 0 0;
+}
+
+.contactUs .touch {
+	text-align: left;
+}
+
+.intouch-body {
+  font-size: 12px;
+}
+
+.intouch-email {
+  margin-top: 15px;
+}
+
+.formContact {
+  margin-bottom: 30px;
+}
+
+.formContact input, .formContact textarea {
+  font-size: 11px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #dbdcdf;
+}
+
+.formContact input:focus, .formContact textarea:focus {
+  box-shadow: none;
+  background-color: #e6e6eb;
+}
 
 .formContact button {
-	float: right;
+  text-shadow: none;
 	background: none;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 0;
 	box-shadow: none;
-	border-radius: 20px;
 	margin-top: 20px;
-	padding-top: 5px;
-	padding-bottom: 4px;
-	padding-left: 50px;
-	padding-right: 50px;
+  padding: 5px 20px;
+}
+
+.formContact button:hover,
+.formContact button:focus,
+.formContact button:active {
+  background-color: #555;
+  color: white;
+  box-shadow: none;
+}
+
+.formContact label {
+  font-weight: 400;
+  font-size: 12px;
 }
 
 

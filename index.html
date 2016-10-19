@@ -29,7 +29,7 @@
 </head>
 
 <body>
- <!--NAVIGATION -->
+ <!--OLD NAVIGATION -->
  <!--<nav class="navbar navbar-default navbar-custom navbar-fixed-top nav-height" role="navigation">-->
    <!--<div class="nav_container">-->
      <!--<div class="navbar-header">-->
@@ -102,8 +102,10 @@
        <li id="navList1"><a id="va1" href="#InsideUs"><span>IN</span>SIDE US</a></li>
        <li id="navList2"><a id="va2" href="#InFolio"><span>IN</span>FOLIO</a></li>
        <li id="navList3"><a id="va3" href="#InProduct"><span>IN</span>PRODUCT</a></li>
-       <li id="navList4"><a id="va4" href="#InPeople"><span>IN</span>PEOPLE</a></li>
-       <li id="navList5"><a id="va5" href="#InTouch"><span>IN</span>TOUCH</a></li>
+       <li class="sublist-items">
+         <a class="sublist-item" id="va4" href="#InPeople"><span>IN</span>PEOPLE</a>
+         <a class="sublist-item" id="va5" href="#InTouch"><span>IN</span>TOUCH</a>
+       </li>
    </nav>
  </menu>
 
@@ -1458,23 +1460,33 @@
   <div class="section">
     <div class="formCont contactUs">
       <div class="row hapus">
-        <div class="col-md-1"></div>
-        <div class="col-md-3 touch">
-          <h4>Get In Touch</h4>
-          <h5>Mail : info@inscale.asia</h5>
-          <h5>Phone : (+62) 21 98 003 329</h5>
-          <h5>Address : Jalan Pinang Raya No. 9 Pondok Labu, Jakarta Selatan, 12450 Indonesia</h5>
-
+        <div class="col-md-2">
         </div>
-        <div class="col-md-4 formContact">
+        <div class="col-md-8">
+          <h3 class="intouch-header">Get In Touch</h4>
+        </div>
+      </div>
+      <div class="row intouch-body">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2 touch">
+          <div class="intouch-address">
+            Jalan Pinang Raya No. 9<br />
+            Pondok Labu, Jekarta Selatan, 12450 Indonesia
+          </div>
+          <div class="intouch-email">
+            <a href="mailto:info@inscale.asia">info@inscale.asia</a>
+          </div>
+          <div class="intouch-tel">
+            <strong>TEL</strong> (+62) 21 98 003 329
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5 formContact">
           <form>
             <div class="form-group">
-              <label>FIRST NAME</label>
-              <input  class="form-control" id="exampleInputEmail1" placeholder="">
-            </div>
-
-            <div class="form-group">
-              <label>LAST NAME</label>
+              <label>YOUR NAME</label>
               <input  class="form-control" id="exampleInputEmail1" placeholder="">
             </div>
 
@@ -1482,18 +1494,15 @@
               <label>EMAIL ADDRESS</label>
               <input type="email"  class="form-control" id="exampleInputEmail1" placeholder="">
             </div>
+            <div class="form-group">
+              <label>INQUIRY</label>
+              <textarea class="form-control" rows="4"></textarea>
+
+              <button type="submit" class="btn btn-default">SEND YOUR INQUIRY</button>
+            </div>
 
           </form>
         </div>
-        <div class="col-md-3 formContact">
-          <form>
-            <label>INQUIRY</label>
-            <textarea class="form-control" rows="8"></textarea>
-
-            <button type="submit" class="btn btn-default"><strong>SEND</strong> YOUR INQUIRY</button>
-          </form>
-        </div>
-        <div class="col-md-1"></div>
       </div>
     </div>
 
