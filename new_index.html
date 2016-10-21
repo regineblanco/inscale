@@ -24,42 +24,47 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
   <link rel="stylesheet" type="text/css" media="all" href="css/jquery.fullpage.min.css">
   <link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css">
-  <link rel="stylesheet" type="text/css" media="all" href="css/new_style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
   <!-- CSS END -->
 </head>
 
 <body>
  <!--OLD NAVIGATION -->
- <!--<nav class="navbar navbar-default navbar-custom navbar-fixed-top nav-height" role="navigation">-->
-   <!--<div class="nav_container">-->
-     <!--<div class="navbar-header">-->
-       <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
-         <!--<span class="sr-only">Toggle navigation</span>-->
-         <!--<span class="icon-bar"></span>-->
-         <!--<span class="icon-bar"></span>-->
-         <!--<span class="icon-bar"></span>-->
-       <!--</button>-->
-     <!--</div>-->
+ <header class="mobile-header">
+   <nav class="navbar navbar-default navbar-custom navbar-fixed-top nav-height" role="navigation">
+     <div class="nav_container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <div class="newLogo">
+           <a class="navbar-brand" href="#VideoHome"><div class="logoPos" style=""><img src="img/logo.png"></div></a></div>
+       </div>
 
-     <!--<div class="newLogo">-->
-       <!--<a class="navbar-brand" href="#VideoHome">-->
-         <!--<div class="logoPos" style="">-->
-           <!--<img src="img/logo.png" />-->
-         <!--</div>-->
-       <!--</a>-->
-     <!--</div>-->
+       <div class="collapse navbar-collapse mainmnenu-wide" id="bs-example-navbar-collapse-1">
+         <ul class="nav nav-social mobileHidden">
+           <li><a href="http://instagram.com/i.n.s.c.a.l.e"><img src="img/insta_icon.png"></a></li>
+           <li><a href="https://twitter.com/inscaleasia"><img src="img/twitter_icon.png"></a></li>
+           <li><a href="#"><img src="img/facebook_icon.png"></a></li>
+         </ul>
+         <ul class="clearfix nope"></ul>
+         <ul id="mainmenu" class="nav navbar-nav navbar-right">
+           <li id="navList1"><a id="va1" href="#InsideUs"><span>IN</span>SIDE US</a></li>
+           <li id="navList2"><a id="va2" href="#InFolio"><span>IN</span>FOLIO</a></li>
+           <li id="navList3"><a id="va3" href="#InProduct"><span>IN</span>PRODUCT</a></li>
+           <li id="navList4"><a id="va4" href="#InPeople"><span>IN</span>PEOPLE</a></li>
+           <li id="navList5"><a id="va5" href="#InTouch"><span>IN</span>TOUCH</a></li>
+           <div id="mainmenubar"></div>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
 
-     <!--<div class="collapse navbar-collapse mainmnenu-wide" id="bs-example-navbar-collapse-1">-->
-       <!--<ul class="nav nav-social mobileHidden">-->
-         <!--<li><a href="http://instagram.com/i.n.s.c.a.l.e"><img src="img/insta_icon.png"></a></li>-->
-         <!--<li><a href="https://twitter.com/inscaleasia"><img src="img/twitter_icon.png"></a></li>-->
-         <!--<li><a href="#"><img src="img/facebook_icon.png"></a></li>-->
-       <!--</ul>-->
-     <!--</div>-->
-   <!--</div>-->
- <!--</nav>-->
-
- <header>
+ <header class="desktop-header">
    <nav>
      <li class="header-left">
        <span class="glyphicon glyphicon-menu-hamburger menu-toggle"></span>
@@ -79,6 +84,7 @@
              </div>
            </a>
          </li>
+         <li>
            <a href="https://twitter.com/inscaleasia">
              <div class="link-social social-twitter">
                <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -109,7 +115,6 @@
    </nav>
  </menu>
 
-
 <div id="fullpage">
   <!-- SLIDER HOME -->
   <div class="section">
@@ -125,7 +130,7 @@
         <div class="carousel-inner" role="listbox">
           <div class="item sliderOne active">
             <div class="carousel-table">
-              <h2>
+              <h2 class="desktop-title">
                 INSCALE
               </h2>
             </div>
@@ -133,7 +138,7 @@
 
           <div class="item sliderTwo">
             <div class="carousel-table">
-              <h2>
+              <h2 class="desktop-title">
                 INSCALE
               </h2>
             </div>
@@ -141,7 +146,7 @@
 
           <div class="item sliderThree">
             <div class="carousel-table">
-              <h2>
+              <h2 class="desktop-title">
                 INSCALE
               </h2>
             </div>
@@ -149,7 +154,7 @@
 
           <div class="item sliderFour">
             <div class="carousel-table">
-              <h2>
+              <h2 class="desktop-title">
                 INSCALE
               </h2>
             </div>
@@ -1576,7 +1581,7 @@
 
   <script type='text/javascript' src='js/wow.min.js'></script>
   <script type='text/javascript' src='js/jquery.magnific-popup.min.js'></script>
-  <script type='text/javascript' src='js/new_main.js'></script>
+  <script type='text/javascript' src='js/main.js'></script>
   <script src="https://use.fontawesome.com/95a08010ec.js"></script>
 <!-- SCRIPT END -->
 </html>
