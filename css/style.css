@@ -303,6 +303,10 @@ menu li a span {
 /*SLIDER HOMEPAGES END*/
 
 /* SECTION STYLING */
+.section {
+  text-align: center;
+}
+
 .section-header {
   display: inline-block;
   position: absolute;
@@ -314,12 +318,17 @@ menu li a span {
 
 .section-title {
   display: inline-block;
-  position: relative;
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   width: 180px;
   z-index: 9999;
-  height: 100%;
+  top: 10px;
+  margin-left: -90px;
+}
+
+.section-title:before,
+.section-title:after {
+  content: '';
+  display: table;
 }
 
 .section-title img {
@@ -329,8 +338,8 @@ menu li a span {
 .section-title h2 {
   position: relative;
   margin: 0;
-  top: 30px;
   letter-spacing: 4px;
+  padding: 30px 0 30px 0;
 }
 
 .title-accent {

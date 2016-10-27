@@ -400,8 +400,12 @@ $('.menu-toggle, .menu-close').click(function(e) {
   $('.menu-close').toggleClass('hidden');
 });
 
+function stickifyTitles() {
+  var options = {
+    offset_top: 10
+  };
 
+  $('.section-title').stick_in_parent(options);
+};
 
-
-
-
+stickifyTitles();
