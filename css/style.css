@@ -147,10 +147,11 @@ ul .nope {
 
 /* CENTERED HEADER */
 .desktop-header {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
-  position: absolute;
-  z-index: 9999;
+  position: fixed;
+  height: 110px;
+  z-index: 7777;
   text-align: center;
   font-size: 15pt;
 
@@ -172,6 +173,7 @@ ul .nope {
 .header-left, .header-right {
   position: absolute;
   top: 40px;
+  z-index: 9999;
 }
 
 .header-left {
@@ -184,12 +186,8 @@ ul .nope {
 }
 
 .header-title {
-  padding: 10px 0px;
-}
-
-.logo-title img {
   height: 90px;
-  width: auto;
+  padding: 10px 0px;
 }
 
 /* HEADER MENU */
@@ -197,14 +195,15 @@ ul .nope {
 menu {
   opacity: 0;
   position: fixed;
+  top: 110px;
   width: 100%;
   z-index: 9998;
   padding: 0px;
-  padding-top: 110px;
+  /*padding-top: 110px;*/
   padding-bottom: 20px;
   margin: 0px;
 
- 	background: rgba(255,255,255,0.8);
+ 	background: rgba(255,255,255,0.6);
  	box-shadow: none;
  	border: none;
   text-align: center;
@@ -303,6 +302,43 @@ menu li a span {
 
 /*SLIDER HOMEPAGES END*/
 
+/* SECTION STYLING */
+.section-header {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 180px;
+  z-index: 9999;
+  height: 100%;
+}
+
+.section-title img {
+  width: 100%;
+}
+
+.section-title h2 {
+  position: relative;
+  margin: 0;
+  top: 30px;
+  letter-spacing: 4px;
+}
+
+.title-accent {
+  color: #AEA46F;
+}
+
+/* SECTION STYLING END */
+
 /*INSIDEUS*/
 
 .insideUs {
@@ -348,7 +384,6 @@ menu li a span {
 .shit div.paddRemove {
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: url(desaturate.svg#greyscale);
     moz-transition: all 0.2s ease-out;
     -webkit-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -821,6 +856,10 @@ img.arrow-pop {
 
 
 @media only screen and (max-width: 768px) {
+  .section-header {
+    display: none;
+  }
+
   .mobile-header {
     display: block;
   }

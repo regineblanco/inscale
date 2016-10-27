@@ -14,7 +14,7 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['VideoHome', 'InsideUs', 'InFolio', 'InProduct', 'InPeople', 'InTouch'],
+        anchors:['VideoHome', 'InsideUs', 'InFolio', 'InPeople', 'InTouch'],
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'Inside Us','InsideUs2', 'InFolio', 'InProcess', 'InPeople', 'InProduct','Direction', 'Contact Us'],
@@ -75,7 +75,6 @@ $(document).ready(function() {
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "#000";
               document.getElementById('va4').style.color = "";
-              document.getElementById('va5').style.color = "";
               }
               else if(index == 2) {
                 clearInterval(slideTimeout);
@@ -86,7 +85,6 @@ $(document).ready(function() {
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";
               document.getElementById('va4').style.color = "";
-              document.getElementById('va5').style.color = "";
 
                 }
 
@@ -99,7 +97,6 @@ $(document).ready(function() {
               document.getElementById('va2').style.color = "#000";
               document.getElementById('va3').style.color = "";
               document.getElementById('va4').style.color = "";
-              document.getElementById('va5').style.color = "";
 
                 }
 
@@ -112,7 +109,6 @@ $(document).ready(function() {
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";
               document.getElementById('va4').style.color = "#000";
-              document.getElementById('va5').style.color = "";
 
                 }
                 else if(index == 6) {
@@ -124,7 +120,6 @@ $(document).ready(function() {
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";
               document.getElementById('va4').style.color = "";
-              document.getElementById('va5').style.color = "#000";
 
                 }
 
@@ -136,9 +131,6 @@ $(document).ready(function() {
               document.getElementById('va1').style.color = "";
               document.getElementById('va2').style.color = "";
               document.getElementById('va3').style.color = "";
-              document.getElementById('va4').style.color = "";
-              document.getElementById('va5').style.color = "";
-
 
             }
             //  if(index == 1){
