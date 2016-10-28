@@ -725,9 +725,12 @@ img.arrow-pop {
 
 /*CONTACT US*/
 
-.contactUs {
+.contact-form-group {
+  margin-bottom: 10px;
+}
 
-
+.contact-column {
+  padding: 0 5px;
 }
 
 .intouch-header {
@@ -741,8 +744,10 @@ img.arrow-pop {
   margin: 30px 0 0 0;
 }
 
-.contactUs .touch {
+.contactUs .intouch-info {
 	text-align: left;
+  padding: 0 20px;
+  padding-bottom: 10px;
 }
 
 .intouch-body {
@@ -778,8 +783,9 @@ img.arrow-pop {
   border: none;
   border-radius: 0;
 	box-shadow: none;
-	margin-top: 20px;
   padding: 5px 20px;
+  margin: 0;
+  width: 100%;
 }
 
 .formContact button:hover,
@@ -788,6 +794,7 @@ img.arrow-pop {
   background-color: #555;
   color: white;
   box-shadow: none;
+  outline: 0;
 }
 
 .formContact label {
@@ -827,10 +834,6 @@ img.arrow-pop {
 .formCont, .mapsCont {
 	width: 100vw;
 	margin: 0 auto;
-}
-
-.formCont {
-	padding-top: 125px;
 }
 
 .mapsCont {
@@ -963,10 +966,6 @@ img.arrow-pop {
 
 	.contactUs .touch {
 		height: auto;
-	}
-
-	.formCont {
-		padding-top: 80px;
 	}
 
 	.formContact label {

@@ -1376,20 +1376,15 @@
        </h2>
      </a>
     <div class="formCont contactUs">
-      <div class="row hapus">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8">
-          <h3 class="intouch-header">Get In Touch</h4>
-        </div>
-      </div>
       <div class="row intouch-body">
         <div class="col-md-2">
         </div>
-        <div class="col-md-2 touch">
+        <div class="col-md-2 intouch-info">
           <div class="intouch-address">
-            Jalan Pinang Raya No. 9<br />
-            Pondok Labu, Jekarta Selatan, 12450 Indonesia
+            <a target="_blank" href="https://www.google.co.id/maps/place/Jl.+Pinang+Raya+No.9,+Pd.+Labu,+Cilandak,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12450/@-6.3080381,106.7958651,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69ee19a4fd343b:0x2fe9c06ecd5c7569!8m2!3d-6.3080434!4d106.7980538?hl=en">
+              Jalan Pinang Raya No. 9<br />
+              Pondok Labu, Jekarta Selatan, 12450 Indonesia
+            </a>
           </div>
           <div class="intouch-email">
             <a href="mailto:info@inscale.asia">info@inscale.asia</a>
@@ -1402,75 +1397,42 @@
         </div>
         <div class="col-md-5 formContact">
           <form>
-            <div class="form-group">
-              <label>YOUR NAME</label>
-              <input  class="form-control" id="exampleInputEmail1" placeholder="">
+            <div class="row hapus">
+              <div class="col-md-4 contact-column">
+                <div class="form-group contact-form-group">
+                  <input class="form-control" id="name" placeholder="YOUR NAME">
+                </div>
+              </div>
+              <div class="col-md-4 contact-column">
+                <div class="form-group contact-form-group">
+                  <input type="email"  class="form-control" id="email" placeholder="EMAIL">
+                </div>
+              </div>
+              <div class="col-md-4 contact-column">
+                <div class="form-group contact-form-group">
+                  <input class="form-control" id="subject" placeholder="SUBJECT">
+                </div>
+              </div>
             </div>
-
-            <div class="form-group">
-              <label>EMAIL ADDRESS</label>
-              <input type="email"  class="form-control" id="exampleInputEmail1" placeholder="">
+            <div class="row hapus">
+              <div class="col-md-12 contact-column">
+                <div class="form-group contact-form-group">
+                  <textarea class="form-control" rows="8" placeholder="INQUIRY"></textarea>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label>INQUIRY</label>
-              <textarea class="form-control" rows="4"></textarea>
-
-              <button type="submit" class="btn btn-default">SEND YOUR INQUIRY</button>
+            <div class="row hapus">
+              <div class="col-md-12 contact-column">
+                <div class="form-group contact-form-group">
+                  <button type="submit" class="btn btn-default">SEND YOUR INQUIRY</button>
+                </div>
+              </div>
             </div>
-
           </form>
         </div>
       </div>
     </div>
-
-    <div class="mapsCont">
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0897700047103!2d106.80666711480545!3d-6.251901795474655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f17a4c9218a5%3A0x36cc52993ea98827!2sBiline+Space!5e0!3m2!1sen!2sid!4v1466662391556" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-
-      <div id="map"></div>
-      <script type="text/javascript">
-      function initMap() {
-
-          // Specify features and elements to define styles.
-          var styleArray = [
-            {
-              featureType: "all",
-              stylers: [
-               { saturation: -80 }
-              ]
-            },{
-              featureType: "road.arterial",
-              elementType: "geometry",
-              stylers: [
-                { hue: "#00ffee" },
-                { saturation: 50 }
-              ]
-            },{
-              featureType: "poi.business",
-              elementType: "labels",
-              stylers: [
-                { visibility: "off" }
-              ]
-            }
-          ];
-
-          // Create a map object and specify the DOM element for display.
-          var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -6.3081345, lng: 106.7981184},
-            scrollwheel: false,
-            // Apply the map style array to the map.
-            styles: styleArray,
-            zoom: 14
-          });
-          var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(-6.3081345, 106.7981184),
-                    map: map,
-                    title: 'INSCALE!'
-                });
-        }
-      </script>
-    </div>
     <!-- CONTACT US END -->
-
 
     </div>
 
