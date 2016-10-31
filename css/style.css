@@ -587,6 +587,92 @@ img.arrow-pop {
 
 /*INFOLIO END*/
 
+/* NEW INFOLIO START */
+
+.infolio-main {
+  padding-top: 175px;
+}
+
+.infolio-gallery {
+  width: 75%;
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0;
+  margin: 0 auto 50px;
+}
+
+.infolio-gallery:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.infolio-gallery .infolio-item,
+.infolio-gallery .infolio-gap {
+  height: 150px;
+  display: inline-block;
+  width: 49%;
+}
+
+.infolio-gallery .infolio-item {
+  position: relative;
+  text-align: left;
+  margin-bottom: 2%;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.infolio-caption-container {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+
+.infolio-caption-container:hover,
+.infolio-caption-container:focus,
+.infolio-caption-container:active {
+  opacity: 1;
+}
+
+.infolio-item p {
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: .5em 1em;
+  padding-right: 50px;
+  font-size: 10px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  letter-spacing: .3em;
+  margin: 0;
+}
+
+.infolio-gallery .infolio-item:before {
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 768px) {
+  .infolio-gallery .infolio-item,
+  .infolio-gallery .infolio-gap {
+    width: 23.5%;
+  }
+}
+
+/* NEW INFOLIO END */
+
 
 /*INPRODUCT*/
 .proD {
@@ -869,6 +955,10 @@ img.arrow-pop {
 
 @media only screen and (max-width: 768px) {
   .section-header {
+    display: none;
+  }
+
+  .section-title {
     display: none;
   }
 

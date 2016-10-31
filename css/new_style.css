@@ -147,9 +147,11 @@ ul .nope {
 
 /* CENTERED HEADER */
 .desktop-header {
+  background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
   position: fixed;
-  z-index: 9999;
+  height: 110px;
+  z-index: 7777;
   text-align: center;
   font-size: 15pt;
 
@@ -171,6 +173,7 @@ ul .nope {
 .header-left, .header-right {
   position: absolute;
   top: 40px;
+  z-index: 9999;
 }
 
 .header-left {
@@ -183,12 +186,8 @@ ul .nope {
 }
 
 .header-title {
-  padding: 10px 0px;
-}
-
-.logo-title img {
   height: 90px;
-  width: auto;
+  padding: 10px 0px;
 }
 
 /* HEADER MENU */
@@ -196,14 +195,15 @@ ul .nope {
 menu {
   opacity: 0;
   position: fixed;
+  top: 110px;
   width: 100%;
   z-index: 9998;
   padding: 0px;
-  padding-top: 110px;
+  /*padding-top: 110px;*/
   padding-bottom: 20px;
   margin: 0px;
 
- 	background: rgba(255,255,255,0.8);
+ 	background: rgba(255,255,255,0.6);
  	box-shadow: none;
  	border: none;
   text-align: center;
@@ -302,6 +302,52 @@ menu li a span {
 
 /*SLIDER HOMEPAGES END*/
 
+/* SECTION STYLING */
+.section {
+  text-align: center;
+}
+
+.section-header {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+  position: absolute;
+  width: 180px;
+  z-index: 9999;
+  top: 10px;
+  margin-left: -90px;
+}
+
+.section-title:before,
+.section-title:after {
+  content: '';
+  display: table;
+}
+
+.section-title img {
+  width: 100%;
+}
+
+.section-title h2 {
+  position: relative;
+  margin: 0;
+  letter-spacing: 4px;
+  padding: 30px 0 30px 0;
+}
+
+.title-accent {
+  color: #AEA46F;
+}
+
+/* SECTION STYLING END */
+
 /*INSIDEUS*/
 
 .insideUs {
@@ -347,7 +393,6 @@ menu li a span {
 .shit div.paddRemove {
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: url(desaturate.svg#greyscale);
     moz-transition: all 0.2s ease-out;
     -webkit-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
@@ -680,9 +725,12 @@ img.arrow-pop {
 
 /*CONTACT US*/
 
-.contactUs {
+.contact-form-group {
+  margin-bottom: 10px;
+}
 
-
+.contact-column {
+  padding: 0 5px;
 }
 
 .intouch-header {
@@ -696,8 +744,10 @@ img.arrow-pop {
   margin: 30px 0 0 0;
 }
 
-.contactUs .touch {
+.contactUs .intouch-info {
 	text-align: left;
+  padding: 0 20px;
+  padding-bottom: 10px;
 }
 
 .intouch-body {
@@ -733,8 +783,9 @@ img.arrow-pop {
   border: none;
   border-radius: 0;
 	box-shadow: none;
-	margin-top: 20px;
   padding: 5px 20px;
+  margin: 0;
+  width: 100%;
 }
 
 .formContact button:hover,
@@ -743,6 +794,7 @@ img.arrow-pop {
   background-color: #555;
   color: white;
   box-shadow: none;
+  outline: 0;
 }
 
 .formContact label {
@@ -784,10 +836,6 @@ img.arrow-pop {
 	margin: 0 auto;
 }
 
-.formCont {
-	padding-top: 125px;
-}
-
 .mapsCont {
   height: 50vh;
 }
@@ -820,6 +868,14 @@ img.arrow-pop {
 
 
 @media only screen and (max-width: 768px) {
+  .section-header {
+    display: none;
+  }
+
+  .section-title {
+    display: none;
+  }
+
   .mobile-header {
     display: block;
   }
@@ -914,10 +970,6 @@ img.arrow-pop {
 
 	.contactUs .touch {
 		height: auto;
-	}
-
-	.formCont {
-		padding-top: 80px;
 	}
 
 	.formContact label {
