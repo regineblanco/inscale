@@ -590,7 +590,23 @@ img.arrow-pop {
 /* NEW INFOLIO START */
 
 .infolio-main {
-  padding-top: 175px;
+  padding-top: 150px;
+}
+
+.infolio-filters {
+  margin-bottom: 15px;
+}
+
+.infolio-filter {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.infolio-filter.active {
+  border-bottom: black solid 1px;
 }
 
 .infolio-gallery {
@@ -620,6 +636,7 @@ img.arrow-pop {
   margin-bottom: 2%;
   padding: 2%;
   vertical-align: top;
+  display: none; /* needed for MixItUp JS filtering plugin */
 }
 
 .infolio-caption-container {

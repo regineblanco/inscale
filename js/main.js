@@ -409,3 +409,16 @@ function stickifyTitles() {
 };
 
 stickifyTitles();
+
+function enableInfolioFilter() {
+  var options = {
+    selectors: {
+      target: '.infolio-item',
+      filter: '.infolio-filter'
+    }
+  };
+
+  $('.infolio-gallery').mixItUp(options);
+};
+
+enableInfolioFilter();
