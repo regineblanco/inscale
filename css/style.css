@@ -14,10 +14,26 @@
     src: url('../fonts/gotham-medium.ttf');
    }
 
-   @font-face {
+@font-face {
     font-family: 'Gotham Bold';
     src: url('../fonts/gotham-bold.ttf');
-   }
+}
+
+@font-face{
+	font-family: 'GT Walsheim Bold';
+	src: url('../fonts/GT-Walsheim-Bold.eot');
+	src: url('../fonts/GT-Walsheim-Bold.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/GT-Walsheim-Bold.woff') format('woff'),
+	     url('../fonts/GT-Walsheim-Bold.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'GT Walsheim Bold Oblique';
+	src: url('../fonts/GT-Walsheim-Bold-Oblique.eot');
+	src: url('../fonts/GT-Walsheim-Bold-Oblique.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/GT-Walsheim-Bold-Oblique.woff') format('woff'),
+	     url('../fonts/GT-Walsheim-Bold-Oblique.ttf') format('truetype');
+}
 
 body {
 	overflow-x: hidden !important;
@@ -26,6 +42,11 @@ body {
  h1, h2, h3 ,h4 ,h5 ,h6, p, span, form, table,div, li {
  	font-family: 'Roboto', Helvetica, Arial;
  }
+
+ h1, h2, h3 {
+ 	font-family: 'GT Walsheim Bold', 'Roboto', Helvetica, Arial;
+ }
+
 p {
 	font-size: 12px;
 	margin-top: 10px;
@@ -767,6 +788,7 @@ img.arrow-pop {
 
 .peoplePadd h3 {
 	/*color: #AEA46F;*/
+  font-family: 'Roboto';
 	font-size: 18px;
 	font-weight: 300;
 	margin-bottom: 0;
